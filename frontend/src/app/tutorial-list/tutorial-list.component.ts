@@ -60,15 +60,25 @@ export class TutorialListComponent implements OnInit{
   }
 
   getAllTutorialsCount():number{
-    return this.tutorials.length;
+    if(this.tutorials)
+      return this.tutorials.length;
+    else
+      return 0;
   }
 
   getPublishedTutorialsCount():number{
-    return this.tutorials.filter(tutorial=> tutorial.published==true).length;
+    if(this.tutorials)
+      return this.tutorials.filter(tutorial=> tutorial.published==true).length;
+    else
+      return 0;
+
   }
 
   getPendingTutorialsCount():number{
-    return this.tutorials.filter(tutorial=> tutorial.published==false).length;
+    if(this.tutorials)
+      return this.tutorials.filter(tutorial=> tutorial.published==false).length;
+    else
+      return 0;
   }
 
   changeSelectedTutorials(data:string){

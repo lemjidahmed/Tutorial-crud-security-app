@@ -1,7 +1,7 @@
-package com.pfe.springbootserver.service;
+package com.pfe.springbootserver.api.service;
 
-import com.pfe.springbootserver.model.Tutorial;
-import com.pfe.springbootserver.repository.TutorialRepository;
+import com.pfe.springbootserver.api.model.Tutorial;
+import com.pfe.springbootserver.api.repository.TutorialRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

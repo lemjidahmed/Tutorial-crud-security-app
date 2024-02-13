@@ -1,4 +1,4 @@
-<div *ngIf="changeView; else editable">
+<div *ngIf="!changeView; else editable">
   <div *ngIf="currentTutorial.id">
     <h4>Tutorial</h4>
     <div>
@@ -28,6 +28,7 @@
 </div>
 
 <ng-template #editable>
+  <app-navbar></app-navbar>
   <div *ngIf="currentTutorial.id" class="edit-form">
     <h4>Tutorial</h4>
     <form>

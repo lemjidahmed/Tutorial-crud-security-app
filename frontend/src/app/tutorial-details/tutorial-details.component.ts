@@ -26,7 +26,7 @@ export class TutorialDetailsComponent implements OnInit {
     private router: Router) { }
 
   ngOnInit(): void {
-    if (!this.changeView) {
+    if (this.changeView) {
       this.message = '';
       this.getTutorial(this.route.snapshot.params["id"]);
     }

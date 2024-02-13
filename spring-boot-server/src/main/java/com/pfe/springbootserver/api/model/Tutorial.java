@@ -1,4 +1,4 @@
-package com.pfe.springbootserver.model;
+package com.pfe.springbootserver.api.model;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;

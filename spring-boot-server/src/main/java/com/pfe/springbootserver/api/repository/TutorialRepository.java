@@ -1,6 +1,6 @@
-package com.pfe.springbootserver.repository;
+package com.pfe.springbootserver.api.repository;
 
-import com.pfe.springbootserver.model.Tutorial;
+import com.pfe.springbootserver.api.model.Tutorial;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;

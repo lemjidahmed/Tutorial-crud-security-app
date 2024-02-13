@@ -10,6 +10,14 @@ import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {HttpClientModule} from "@angular/common/http";
 import { AddTutorialComponent } from './add-tutorial/add-tutorial.component';
 import { FilterComponent } from './filter/filter.component';
+import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register/register.component';
+import { HomeComponent } from './home/home.component';
+import { ProfileComponent } from './profile/profile.component';
+import { BoardAdminComponent } from './board-admin/board-admin.component';
+import { BoardModeratorComponent } from './board-moderator/board-moderator.component';
+import { BoardUserComponent } from './board-user/board-user.component';
+import {httpInterceptorProviders} from "./_helpers/http.interceptor";
 
 @NgModule({
   declarations: [
@@ -19,6 +27,13 @@ import { FilterComponent } from './filter/filter.component';
     TutorialDetailsComponent,
     AddTutorialComponent,
     FilterComponent,
+    LoginComponent,
+    RegisterComponent,
+    HomeComponent,
+    ProfileComponent,
+    BoardAdminComponent,
+    BoardModeratorComponent,
+    BoardUserComponent,
   ],
     imports: [
         BrowserModule,
@@ -27,7 +42,7 @@ import { FilterComponent } from './filter/filter.component';
         HttpClientModule,
         ReactiveFormsModule
     ],
-  providers: [],
+  providers: [httpInterceptorProviders],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
